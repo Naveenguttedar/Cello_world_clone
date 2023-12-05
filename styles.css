@@ -369,7 +369,7 @@ h4{
 }
 .email_id input{
    height: 50px;
-   width: 250px;
+   max-width: 250px;
 }
 .sub{
     height: 50px;
@@ -716,8 +716,6 @@ h4{
 .sub_heading{
   display: none;
 }
-}
-@media only screen and (max-width:820px) {
  footer{
   grid-template-columns:  250px 200px 200px;
   
@@ -726,3 +724,31 @@ h4{
   grid-column: 2/4;
  }
 }
+
+@media only screen and (max-width:600px){
+  footer{
+    grid-template-columns: 1fr;
+    grid: row;
+  }
+  .explore{
+    grid-row: 1;
+  }
+  .products{
+    grid-row: 2;
+  }
+  .support{
+    grid-row: 3;
+  }
+  .help{
+    grid-row:4;
+    grid-column: 1/1 !important;
+  }
+  .sign_up{
+    grid-row: 5;
+  }
+  footer ul{
+    display: none;
+  }
+}
+
+
