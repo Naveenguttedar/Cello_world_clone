@@ -20,6 +20,7 @@ a{
 }
 body{
   font-family: 'Manrope', sans-serif;
+  scrollbar-width: thin;
 }
 section{
   padding-top: 1rem;
