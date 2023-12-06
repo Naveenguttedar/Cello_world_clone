@@ -392,4 +392,42 @@ box-shadow: 0 8px 12px 5px #959494;
   background-color: #ccc;
   width: 2px;
 }
+ footer{
+  grid-template-columns:  250px 200px 200px;
+  
+ }
+ footer>.help{
+  grid-column: 2/4;
+ }
+}
+@media only screen and (max-width:600px){
+  footer{
+    grid-template-columns: 1fr;
+    grid: row;
+  }
+  .explore{
+    grid-row: 1;
+  }
+  .products{
+    grid-row: 2;
+  }
+  .support{
+    grid-row: 3;
+  }
+  .help{
+    grid-row:4;
+    grid-column: 1/1 !important;
+  }
+  .sign_up{
+    grid-row: 5;
+  }
+  .content ul{
+    display: none;
+  }
+  .connect>ul{
+    display: block;
+  }
+  .time>ul{
+    display: block;
+  }
 }
